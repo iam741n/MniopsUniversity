@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button, Navbar, Nav, FormControl, Form, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Navbar, Nav, NavDropdown, FormControl, Form, Accordion } from 'react-bootstrap';
 import { FaSearch, FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import '../Styles/Homepage.css';
@@ -23,24 +23,40 @@ const Homepage = () => {
           </Container>
         </div>
         <Navbar expand="lg" className="navbar-custom py-3">
-          <Container>
-            <Navbar.Brand href="#">
-              <img src="/Mniops.png" alt="Mniops Logo" height="100" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link href="#">Academic Programs</Nav.Link>
-                <Nav.Link href="#">Student Experience</Nav.Link>
-                <Nav.Link href="#">Become A Student</Nav.Link>
-                <Nav.Link href="#">Tuition-Free</Nav.Link>
-                <Nav.Link href="#">About</Nav.Link>
-                <Nav.Link href="#">Contact</Nav.Link>
-                <Button className="apply-now-btn ml-3">Apply Now</Button>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+      <Container>
+        <Navbar.Brand href="#">
+          <img src="/Mniops.png" alt="Mniops Logo" height="100" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
+              <NavDropdown title="Master's Degree" id="masters-degree-dropdown">
+                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
+                <NavDropdown.Item href="#">Information Technology</NavDropdown.Item>
+                <NavDropdown.Item href="#">Education</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Bachelor's Degree" id="bachelors-degree-dropdown">
+                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
+                <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
+                <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Associate's Degree" id="associates-degree-dropdown">
+                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
+                <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
+                <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
+              </NavDropdown>
+            </NavDropdown>
+            <Nav.Link href="#">Student Experience</Nav.Link>
+            <Nav.Link href="#">Become A Student</Nav.Link>
+            <Nav.Link href="#">Tuition-Free</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#">Contact</Nav.Link>
+            <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
         <header className="header">
           <Container>
@@ -125,21 +141,21 @@ const Homepage = () => {
               <Col md={6}>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header>Does UoPeople accept international students?</Accordion.Header>
+                    <Accordion.Header>Does Mniops people accept international students?</Accordion.Header>
                     <Accordion.Body>
-                      Yes, UoPeople accepts international students from all over the world.
+                      Yes, <strong>Mniops</strong> accepts international students from all over the world.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
                     <Accordion.Header>Are the programs accredited?</Accordion.Header>
                     <Accordion.Body>
-                      <strong>University of the People</strong> is accredited by the Distance Education Accrediting Commission. The Distance Education Accrediting Commission (DEAC) is listed by the U.S. Department of Education as a recognized accrediting agency.
+                      <strong>Mniops</strong> is accredited by the Distance Education Accrediting Commission. The Distance Education Accrediting Commission (DEAC) is listed by the U.S. Department of Education as a recognized accrediting agency.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>Will I get the academic support I need?</Accordion.Header>
                     <Accordion.Body>
-                      Yes, UoPeople provides various forms of academic support to ensure student success.
+                      Yes, <strong>Mniops</strong> provides various forms of academic support to ensure student success.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="3">
