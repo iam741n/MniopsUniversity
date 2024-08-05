@@ -1,163 +1,296 @@
 /* src/styles/Homepage.css */
 
+/* General Styles */
 .header {
   background-color: #7E254E;
   color: #fff;
   padding: 60px 0;
   text-align: left;
 }
-  
-  .header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  
-  .header p {
-    font-size: 1.2rem;
-  }
-  
-  .search-container {
-    background-color: #f8f9fa;
-  }
-  
-  .search-bar {
-    border-radius: 20px;
-    margin-right: 10px;
-  }
-  
-  .search-icon {
-    border-radius: 50%;
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+.search-container {
+  background-color: #f8f9fa;
+}
+
+.search-bar {
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  border-radius: 50%;
+}
+
+.navbar-custom {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .nav-link {
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-custom .apply-now-btn {
+  background-color: #e83e8c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+
+.apply-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-section .btn-primary {
+  background-color: #e83e8c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-custom:hover {
+  transform: scale(1.05);
+}
+
+.card-custom .card-body {
+  padding: 20px;
+}
+
+.card-custom .btn-primary {
+  background-color: #e83e8c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+
+.card-custom ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-custom ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.card-custom ul li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #e83e8c;
+  font-size: 1.5rem;
+}
+
+.faq-section {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.faq-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.faq-section p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.accordion-button {
+  color: #fff;
+  background-color: #444;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #e83e8c;
+  background-color: #333;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.custom-footer {
+  background-color: #7E254E;
+}
+
+.navbar-footer {
+  background-color: #2b6777;
+}
+
+.navbar-footer .nav-link {
+  color: #fff;
+}
+
+.navbar-footer .nav-link:hover {
+  color: #b95545;
+}
+
+.list-unstyled button {
+  color: #fff;
+  font-size: 24px;
+}
+
+.list-unstyled button:hover {
+  color: #b95545;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .header {
+    text-align: center;
+    padding: 30px 0;
   }
 
-  .navbar-custom {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .header h1 {
+    font-size: 2.5rem;
   }
-  
-  .navbar-custom .nav-link {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .navbar-custom .apply-now-btn {
-    background-color: #e83e8c;
-    border: none;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 8px 16px;
-  }
-  
-  .apply-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .apply-section .btn-primary {
-    background-color: #e83e8c;
-    border: none;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 10px 20px;
+
+  .header p {
     font-size: 1rem;
   }
-  
-  
-  .card-custom {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.2s ease-in-out;
+
+  .navbar-custom .nav-link {
+    font-size: 0.9rem;
   }
-  
-  .card-custom:hover {
-    transform: scale(1.05);
+
+  .navbar-custom .apply-now-btn {
+    padding: 6px 12px;
+  }
+
+  .apply-section .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .card-custom {
+    margin-bottom: 20px;
   }
 
   .card-custom .card-body {
-    padding: 20px;
+    padding: 15px;
   }
-  
-  .card-custom .btn-primary {
-    background-color: #e83e8c;
-    border: none;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 8px 16px;
-  }
-  
-  .card-custom ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .card-custom ul li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .card-custom ul li:before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #e83e8c;
-    font-size: 1.5rem;
-  }
-  .faq-section {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-  }
-  
+
   .faq-section h2 {
-    margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 28px;
   }
-  
+
   .faq-section p {
-    margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
-  
-  .accordion-button {
-    color: #fff;
-    background-color: #444;
-    border: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+    padding: 20px 0;
   }
-  
-  .accordion-button:not(.collapsed) {
-    color: #e83e8c;
-    background-color: #333;
+
+  .header h1 {
+    font-size: 2rem;
   }
-  
-  .accordion-button::after {
-    filter: invert(1);
+
+  .header p {
+    font-size: 0.9rem;
   }
-  
-  .custom-footer {
-    background-color: #7E254E;
+
+  .navbar-custom .nav-link {
+    font-size: 0.8rem;
   }
-  
-  .navbar-footer {
-    background-color: #2b6777;
+
+  .navbar-custom .apply-now-btn {
+    padding: 4px 10px;
   }
-  
-  .navbar-footer .nav-link {
-    color: #fff;
+
+  .apply-section .btn-primary {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
-  
-  .navbar-footer .nav-link:hover {
-    color: #b95545;
+
+  .card-custom {
+    margin-bottom: 15px;
   }
-  
-  .list-unstyled button {
-    color: #fff;
+
+  .card-custom .card-body {
+    padding: 10px;
+  }
+
+  .faq-section h2 {
     font-size: 24px;
   }
-  
-  .list-unstyled button:hover {
-    color: #b95545;
+
+  .faq-section p {
+    font-size: 14px;
   }
+}
+
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.8rem;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 0.7rem;
+  }
+
+  .navbar-custom .apply-now-btn {
+    padding: 3px 8px;
+  }
+
+  .apply-section .btn-primary {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .card-custom {
+    margin-bottom: 10px;
+  }
+
+  .card-custom .card-body {
+    padding: 8px;
+  }
+
+  .faq-section h2 {
+    font-size: 20px;
+  }
+
+  .faq-section p {
+    font-size: 12px;
+  }
+}
