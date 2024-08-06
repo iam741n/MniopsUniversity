@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button, Navbar, Nav, NavDropdown, FormControl, Form, Accordion } from 'react-bootstrap';
-import { FaSearch, FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { Container, Row, Col, Button, Navbar, Nav} from 'react-bootstrap';
+import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import '../Styles/RequestInfo.css';  // Import the CSS file
 
 function RequestInfo() {
