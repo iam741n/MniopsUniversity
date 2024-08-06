@@ -10,7 +10,7 @@ const Homepage = () => {
       <Container fluid className="p-0">
         <div className="search-container bg-light py-3">
           <Container className="d-flex justify-content-end align-items-center">
-            <Button variant="link" className="mx-2 p-0">Request Info</Button>
+          <Link to ="/RequestInfo"><Button variant="link" className="mx-2 p-0">Request Info</Button></Link>
             <Link to ="/Login"><Button variant="link" className="mx-2 p-0">Login</Button></Link>
             <Form className="d-flex align-items-center">
               <FormControl
