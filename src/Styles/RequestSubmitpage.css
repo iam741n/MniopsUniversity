@@ -1,0 +1,143 @@
+/* General Styles */
+.submit-info-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+/* Logo Section */
+.submit-logo-container {
+    background-color: #1a237e;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* Header Section */
+.sub-header {
+    padding: 60px 0;
+    text-align: left;
+    background-color: #f8f8f8;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3C2C81;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.btn-view-page {
+    background-color: #B2125C;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 60px;
+    border-radius: 30px;
+    color: white;
+}
+
+.btn-view-page:hover {
+    background-color: #993939;
+}
+
+.student-image {
+    max-width: 90%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .student-image {
+        max-width: 80%;
+    }
+}
+
+/* Contact Us Section */
+.contact-us-container {
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-us-container h2 {
+    font-size: 24px;
+    color: #1a237e; /* Blue color */
+    margin-bottom: 10px;
+}
+
+.contact-us-container p {
+    font-size: 16px;
+    color: #555; /* Grey text */
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-item {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-icon {
+    width: 40px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    color: #1a237e; /* Blue color */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #333; /* Dark grey text */
+}
+
+/* Divider between items */
+.contact-item:not(:last-child) {
+    border-right: 1px solid #ccc; /* Light grey divider */
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+/* Footer Section */
+.req-custom-footer {
+    background-color: #7E254E;
+}
+
+.req-navbar-footer {
+    background-color: #2b6777;
+}
+
+.req-navbar-footer .nav-link {
+    color: #fff;
+}
+
+.req-navbar-footer .nav-link:hover {
+    color: #b95545;
+}
+
+.req-list-unstyled button {
+    color: #fff;
+    font-size: 24px;
+}
+
+.req-list-unstyled button:hover {
+    color: #b95545;
+}
+
+/* Miscellaneous */
+.university-logo {
+    max-height: 100px;
+}

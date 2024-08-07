@@ -25,7 +25,7 @@ const Homepage = () => {
         <Navbar expand="lg" className="navbar-custom py-3">
       <Container>
         <Navbar.Brand href="#">
-          <img src="/Mniops.png" alt="Mniops Logo" height="100" />
+          <img src="/Mniops.png" alt="Mniops Logo" height="130" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -67,7 +67,7 @@ const Homepage = () => {
                 <Button className="btn-primary mt-3">Apply Now</Button>
               </Col>
               <Col md={6}>
-                <img src="/graduation.png" alt="Graduated" className="img-fluid" />
+                <img src="/students.png" alt="Graduated" className="img-fluid" />
               </Col>
             </Row>
           </Container>

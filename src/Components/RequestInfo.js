@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button, Navbar, Nav} from 'react-bootstrap';
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import '../Styles/RequestInfo.css';  // Import the CSS file
+import { Link } from 'react-router-dom'; 
 
 function RequestInfo() {
   return (
@@ -47,7 +48,7 @@ function RequestInfo() {
               <option>Master's Degree</option>
             </select>
           </div>
-          <button type="submit" className="btn btn-primary btn-block">SUBMIT</button>
+         <Link to ="/RequestSubmitpage"><button type="submit" className="btn btn-primary btn-block">SUBMIT</button></Link> 
         </form>
       </div>
       
