@@ -1,142 +1,135 @@
-/* Ensure these styles only apply to the login screen */
-.login-page {
-  height: 100vh;
-  background-color: #0a0e45;
+.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.login-container {
+.login-app {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  animation: fadeIn 1s;
+  background: linear-gradient(180deg, rgba(11, 17, 69, 1) 0%, rgba(126, 37, 78, 1) 100%);
 }
 
-.login-form {
+.login-container {
   background-color: #fff;
-  padding: 60px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: slideIn 1s;
-  width: 100%;
-  max-width: 500px;
-}
-
-.login-title {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.5em;
-  color: #000000;
+  width: 450px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .login-logo {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 110px;
+  width: 150px;
+  margin-bottom: 40px;
 }
 
-.input-field {
-  border-radius: 50px;
-  padding: 15px 20px;
+.login-input-container {
   margin-bottom: 20px;
-  box-shadow: none;
 }
 
-.password-group {
+.login-input {
+  width: 75%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.password-input-container {
   position: relative;
 }
 
-.password-icon {
+.password-toggle-icon {
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 15.5px;
+}
+
+.login-submit-button {
+  width: 50%;
+  padding: 10px;
+  background-color: #272b99;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
   cursor: pointer;
 }
 
-.login-button {
-  width: 100%;
-  background-color: #311b92;
-  border: none;
-  padding: 15px 0;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+.login-submit-button:hover {
+  background-color: #1c1f70;
 }
 
-.login-button:hover {
-  background-color: #4527a0;
+.login-signup-text {
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.login-signup-link {
+  color: #272b99;
+  text-decoration: none;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0);
-  }
+.login-signup-link:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-  .login-form {
-    padding: 40px;
+  .login-container {
+    width: 90%;
+    padding: 30px;
   }
 
-  .login-title {
-    font-size: 1.4em;
+  .login-input {
+    width: 80%;
   }
 
-  .input-field {
-    padding: 14px 18px;
-    margin-bottom: 18px;
-  }
-
-  .login-button {
-    padding: 14px 0;
+  .login-submit-button {
+    width: 60%;
+    padding: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  .login-form {
-    padding: 30px;
+  .login-container {
+    width: 95%;
+    padding: 20px;
   }
 
-  .login-title {
-    font-size: 1.3em;
+  .login-input {
+    width: 85%;
   }
 
-  .input-field {
-    padding: 13px 16px;
-    margin-bottom: 16px;
-  }
-
-  .login-button {
-    padding: 13px 0;
+  .login-submit-button {
+    width: 70%;
+    padding: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  .login-form {
-    padding: 20px;
+  .login-container {
+    width: 100%;
+    padding: 15px;
   }
 
-  .login-title {
-    font-size: 1.2em;
+  .login-input {
+    width: 90%;
   }
 
-  .input-field {
-    padding: 12px 14px;
-    margin-bottom: 14px;
+  .login-submit-button {
+    width: 80%;
+    padding: 16px;
   }
 
-  .login-button {
-    padding: 12px 0;
+  .password-toggle-icon {
+    right: 8%;
   }
 }

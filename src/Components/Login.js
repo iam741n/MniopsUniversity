@@ -1,46 +1,40 @@
 import React, { useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import '../Styles/Login.css';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-const Login = () => {
-  const [showPassword, setShowPassword] = useState(false);
+function Login() {
+  const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
+    setPasswordVisible(!passwordVisible);
   };
 
   return (
-    <div className="login-page">
-      <Container className="d-flex justify-content-center align-items-center login-container">
-        <div className="login-form">
-          <img src="/Mniops.png" alt="Logo" className="login-logo" />
-           {/* <h3 className="login-title text-center mb-4">Mniops</h3> */}
-          <Form>
-            <Form.Group controlId="formUsername">
-              <Form.Control type="text" placeholder="Username" className="input-field" />
-            </Form.Group>
-            <Form.Group controlId="formPassword" className="password-group">
-              <Form.Control
-                type={showPassword ? 'text' : 'password'}
+    <div className="login-body">
+      <div className="login-app">
+        <div className="login-container">
+          <img src="/Mniops.png" alt="logo" className="login-logo" />
+          <div className="login-input-container">
+            <input type="text" className="login-input" placeholder="Username" />
+            <div className="password-input-container">
+              <input
+                type={passwordVisible ? 'text' : 'password'}
+                className="login-input"
                 placeholder="Password"
-                className="input-field"
               />
-              <span onClick={togglePasswordVisibility} className="password-icon">
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              <span className="password-toggle-icon" onClick={togglePasswordVisibility}>
+                {passwordVisible ? <FaEyeSlash /> : <FaEye />}
               </span>
-            </Form.Group>
-            <Button variant="primary" type="submit" className="login-button">
-              Log In
-            </Button>
-          </Form>
-          <div className="text-center mt-3">
-            <span>Don't have any account? <a href="/signup">Sign Up</a></span>
+            </div>
           </div>
+          <button className="login-submit-button">Log in</button>
+          <p className="login-signup-text">
+            Don't have any account? <a href="/signup" className="login-signup-link">Sign Up</a>
+          </p>
         </div>
-      </Container>
+      </div>
     </div>
   );
-};
+}
 
 export default Login;

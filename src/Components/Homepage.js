@@ -47,7 +47,7 @@ const Homepage = () => {
                 <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
               </NavDropdown>
             </NavDropdown>
-            <Nav.Link href="#">Student Experience</Nav.Link>
+            <Nav.Link href="/Bachelor">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
             <Nav.Link href="#">Tuition-Free</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
@@ -64,7 +64,7 @@ const Homepage = () => {
               <Col md={6}>
                 <h1>Bachelor's Degree</h1>
                 <p>Learn From A Curriculum Specially Crafted By Top-Notch Industry Leaders To Prepare You For Real World Success.</p>
-                <Button className="btn-primary mt-3">Apply Now</Button>
+                <Link to="/ApplyNow"><Button className="btn-primary mt-3">Apply Now</Button></Link>
               </Col>
               <Col md={6}>
                 <img src="/students.png" alt="Graduated" className="img-fluid" />
@@ -175,7 +175,7 @@ const Homepage = () => {
             <Row className="mt-4">
               <Col>
                 <p style={{ fontWeight: 'bold', fontSize: '2.1rem' }}>Looking for a bright future?</p>
-                <Button variant="primary">Apply Now</Button>
+               <Link to= "/ApplyNow"><Button variant="primary">Apply Now</Button></Link> 
               </Col>
             </Row>
             <Navbar expand="lg" className="navbar-footer mt-4">
