@@ -37,9 +37,7 @@ const Homepage = () => {
                 <NavDropdown.Item href="#">Education</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Bachelor's Degree" id="bachelors-degree-dropdown">
-                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-                <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
-                <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
+              <NavDropdown.Item href="/Bachelor">Bachelor</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Associate's Degree" id="associates-degree-dropdown">
                 <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
@@ -47,7 +45,7 @@ const Homepage = () => {
                 <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
               </NavDropdown>
             </NavDropdown>
-            <Nav.Link href="/Bachelor">Student Experience</Nav.Link>
+            <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
             <Nav.Link href="#">Tuition-Free</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>

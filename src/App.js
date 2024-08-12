@@ -6,6 +6,7 @@ import ApplyNow from './Components/ApplyNow';
 import RequestInfo from './Components/RequestInfo';
 import RequestSubmitpage from './Components/RequetSubmitpage';
 import Bachelors from './Components/Bachelor';
+import StudentExperience from './Components/StudentExperience';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/RequestInfo" element={<RequestInfo />} />
       <Route path="/RequestSubmitpage" element={<RequestSubmitpage />} />
       <Route path="/Bachelor" element={<Bachelors />} />
+      <Route path="/StudentExperience" element={<StudentExperience />} />
       </Routes>
       </Router>
   );
