@@ -23,7 +23,7 @@ const StudentExperience = () => {
         </div>
     <Navbar expand="lg" className="navbar-custom py-3">
     <Container>
-      <Navbar.Brand href="#">
+      <Navbar.Brand href="/">
         <img src="/Mniops.png" alt="Mniops Logo" height="130" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -48,7 +48,7 @@ const StudentExperience = () => {
           <Nav.Link href="#">Become A Student</Nav.Link>
           <Nav.Link href="#">Tuition-Free</Nav.Link>
           <Nav.Link href="#">About</Nav.Link>
-          <Nav.Link href="#">Contact</Nav.Link>
+          <Nav.Link href="/ContactUs">Contact</Nav.Link>
           <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
         </Nav>
       </Navbar.Collapse>

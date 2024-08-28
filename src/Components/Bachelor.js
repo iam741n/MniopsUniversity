@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button, Navbar, Nav, NavDropdown, FormControl, Form, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Button, Navbar, Nav, NavDropdown, FormControl, Form  } from 'react-bootstrap';
 import { FaSearch, FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import "../Styles/Bachelors.css";
@@ -23,41 +23,39 @@ function Bachelors() {
             </Form>
           </Container>
         </div>
-        <Navbar expand="lg" className="bach-navbar-custom py-3">
-      <Container>
-        <Navbar.Brand href="#">
-          <img src="/Mniops.png" alt="Mniops Logo" height="130" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
-              <NavDropdown title="Master's Degree" id="masters-degree-dropdown">
-                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-                <NavDropdown.Item href="#">Information Technology</NavDropdown.Item>
-                <NavDropdown.Item href="#">Education</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Bachelor's Degree" id="bachelors-degree-dropdown">
-                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-                <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
-                <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Associate's Degree" id="associates-degree-dropdown">
-                <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-                <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
-                <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
-              </NavDropdown>
+        <Navbar expand="lg" className="navbar-custom py-3">
+    <Container>
+      <Navbar.Brand href="/">
+        <img src="/Mniops.png" alt="Mniops Logo" height="130" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
+            <NavDropdown title="Master's Degree" id="masters-degree-dropdown">
+              <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
+              <NavDropdown.Item href="#">Information Technology</NavDropdown.Item>
+              <NavDropdown.Item href="#">Education</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/Bachelor">Student Experience</Nav.Link>
-            <Nav.Link href="#">Become A Student</Nav.Link>
-            <Nav.Link href="#">Tuition-Free</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
-            <Link to="/ApplyNow" className="btn bach-apply-now-btn ml-3">Apply Now</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            <NavDropdown title="Bachelor's Degree" id="bachelors-degree-dropdown">
+            <NavDropdown.Item href="/Bachelor">Bachelor</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Associate's Degree" id="associates-degree-dropdown">
+              <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
+              <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
+              <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
+            </NavDropdown>
+          </NavDropdown>
+          <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
+          <Nav.Link href="#">Become A Student</Nav.Link>
+          <Nav.Link href="#">Tuition-Free</Nav.Link>
+          <Nav.Link href="#">About</Nav.Link>
+          <Nav.Link href="/ContactUs">Contact</Nav.Link>
+          <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
       <div className="container mt-5">
         {/* Bachelor of Science in Business Administration */}
         <div className="degree-container">

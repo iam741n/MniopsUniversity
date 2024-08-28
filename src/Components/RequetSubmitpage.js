@@ -8,7 +8,7 @@ const RequestSubmitpage = () => {
   return (
     <div className="submit-info-container">
     <div className="submit-logo-container mb-3">
-      <img src="/Mniops2.png" alt="MNI OPS Logo" className="university-logo" />
+     <a href="/"> <img src="/Mniops2.png" alt="MNI OPS Logo" className="university-logo" /></a>
     </div>
     <header className="sub-header">
       <Container>

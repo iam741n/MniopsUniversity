@@ -8,7 +8,9 @@ const ApplyNow = () => {
     return (
     <div>
       <div className="university-logo-container mb-3">
+      <a href="/">
         <img src="/Mniops2.png" alt="MNI OPS Logo" className="university-logo" />
+           </a>
       </div>
       <Container className="university-form-container my-5">
         <div className="university-form-header text-center mb-4">

@@ -7,6 +7,7 @@ import RequestInfo from './Components/RequestInfo';
 import RequestSubmitpage from './Components/RequetSubmitpage';
 import Bachelors from './Components/Bachelor';
 import StudentExperience from './Components/StudentExperience';
+import ContactUs from './Components/ContactUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/RequestSubmitpage" element={<RequestSubmitpage />} />
       <Route path="/Bachelor" element={<Bachelors />} />
       <Route path="/StudentExperience" element={<StudentExperience />} />
+      <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
       </Router>
   );

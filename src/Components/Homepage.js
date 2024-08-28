@@ -24,7 +24,7 @@ const Homepage = () => {
         </div>
         <Navbar expand="lg" className="navbar-custom py-3">
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <img src="/Mniops.png" alt="Mniops Logo" height="130" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -49,7 +49,7 @@ const Homepage = () => {
             <Nav.Link href="#">Become A Student</Nav.Link>
             <Nav.Link href="#">Tuition-Free</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
+            <Nav.Link href="/ContactUs">Contact</Nav.Link>
             <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
           </Nav>
         </Navbar.Collapse>
@@ -85,7 +85,7 @@ const Homepage = () => {
                     <li>Apply Skills To Debug, Code And Test New Programming Solutions</li>
                     <li>Expand Your Critical Thinking Beyond The Classroom</li>
                   </ul>
-                  <Button className="btn-primary mt-3">Learn More</Button>
+                  <Link to ="/ApplyNow"><Button variant="primary">Learn More</Button></Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -103,7 +103,7 @@ const Homepage = () => {
                     <li>Apply Skills To Debug, Code And Test New Programming Solutions</li>
                     <li>Expand Your Critical Thinking Beyond The Classroom</li>
                   </ul>
-                  <Button variant="primary">Learn More</Button>
+                  <Link to ="/ApplyNow"><Button variant="primary">Learn More</Button></Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -121,7 +121,7 @@ const Homepage = () => {
                     <li>Analyze Global Health Problems And Propose Solutions</li>
                     <li>Explore Ethics Of Healthcare Laws And Policies</li>
                   </ul>
-                  <Button variant="primary">Learn More</Button>
+                  <Link to ="/ApplyNow"><Button variant="primary">Learn More</Button></Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -134,7 +134,7 @@ const Homepage = () => {
               <Col md={6} className="text-center text-md-left mb-4 mb-md-0">
                 <h2>COMMON QUESTIONS STUDENTS ARE ASKING US</h2>
                 <p>Questions regarding our academic programs offered at Mniops</p>
-                <Button variant="light">View All</Button>
+                {/* <Button variant="light">View All</Button> */}
               </Col>
               <Col md={6}>
                 <Accordion>
