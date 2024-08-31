@@ -69,28 +69,17 @@ const ContactUs = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
-            <NavDropdown title="Master's Degree" id="masters-degree-dropdown">
-              <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-              <NavDropdown.Item href="#">Information Technology</NavDropdown.Item>
-              <NavDropdown.Item href="#">Education</NavDropdown.Item>
+      <Nav className="ml-auto">
+            <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
+                <NavDropdown.Item href="/Bachelor">Bachelor's Programs</NavDropdown.Item>
+                <NavDropdown.Item href="#">Master's Programs</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Bachelor's Degree" id="bachelors-degree-dropdown">
-            <NavDropdown.Item href="/Bachelor">Bachelor</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Associate's Degree" id="associates-degree-dropdown">
-              <NavDropdown.Item href="#">Business Administration</NavDropdown.Item>
-              <NavDropdown.Item href="#">Computer Science</NavDropdown.Item>
-              <NavDropdown.Item href="#">Health Education</NavDropdown.Item>
-            </NavDropdown>
-          </NavDropdown>
-          <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
-          <Nav.Link href="#">Become A Student</Nav.Link>
-          <Nav.Link href="#">Tuition-Free</Nav.Link>
-          <Nav.Link href="/AboutUs">About</Nav.Link>
-          <Nav.Link href="/ContactUs">Contact</Nav.Link>
-          <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
+            <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
+            <Nav.Link href="#">Become A Student</Nav.Link>
+            <Nav.Link href="#">Tuition-Free</Nav.Link>
+            <Nav.Link href="/AboutUs">About</Nav.Link>
+            <Nav.Link href="/ContactUs">Contact</Nav.Link>
+            <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
