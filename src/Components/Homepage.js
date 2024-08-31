@@ -48,7 +48,7 @@ const Homepage = () => {
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
             <Nav.Link href="#">Tuition-Free</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
             <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
           </Nav>

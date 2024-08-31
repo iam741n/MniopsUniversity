@@ -8,7 +8,7 @@ function RequestInfo() {
   return (
     <div className="request-info-container">
       <div className="req-logo-container mb-3">
-        <img src="/Mniops2.png" alt="MNI OPS Logo" className="university-logo" />
+       <a href="/"> <img src="/Mniops2.png" alt="MNI OPS Logo" className="university-logo" /></a>
       </div>
       <div className="req-form-header text-center mb-4">
         <h1>Learn About Mniops Academic Programs</h1>

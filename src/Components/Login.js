@@ -13,7 +13,7 @@ function Login() {
     <div className="login-body">
       <div className="login-app">
         <div className="login-container">
-          <img src="/Mniops.png" alt="logo" className="login-logo" />
+        <a href="/"><img src="/Mniops.png" alt="logo" className="login-logo" /></a>
           <div className="login-input-container">
             <input type="text" className="login-input" placeholder="Username" />
             <div className="password-input-container">

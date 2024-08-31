@@ -1,0 +1,196 @@
+.about-us-container * {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+  }
+
+  
+  .about-us-container *,
+  .about-us-container *::before,
+  .about-us-container *::after {
+    box-sizing: content-box;
+  }
+  
+  .about-us-container .container,
+.about-us-container .container-fluid {
+    max-width: 100%; /* Prevents overflow */
+    padding-right: 15px; /* Standard Bootstrap padding */
+    padding-left: 15px;
+}
+
+  
+  .about-us-container .about-us {
+    background: #F5F2F6;
+    display: flex;
+    font-family: "Inria Sans", sans-serif;
+    padding-top: 20px;
+    max-width: 100%;
+    box-shadow: 0 6px 8px rgb(194, 189, 189);
+  }
+  
+  .about-us-container .intro {
+    padding-left: 3rem;
+  }
+  
+  .about-us-container .intro h1 {
+    font-weight: 700;
+    color: #0B1145;
+  }
+  
+  .about-us-container .intro h6 {
+    font-weight: 550;
+  }
+  
+  .about-us-container .about-us img {
+    width: 50%;
+    height: 30vh;
+  }
+  
+  @media (max-width: 767px) {
+    .about-us-container .about-us img {
+      height: 30vh;
+      object-fit: cover;
+      margin-left: -35px;
+    }
+  
+    .about-us-container .intro {
+      padding-left: 5px;
+    }
+  }
+  
+  .about-us-container .mission-box {
+    background: #0B1145;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 8px #333864;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .about-us-container .mission-box h2 {
+    font-weight: 600;
+  }
+  
+  .about-us-container .mission-box h6 {
+    font-family: "Yaldevi Colombo SemiBold", sans-serif;
+    letter-spacing: 0.25px;
+  }
+  
+  .about-us-container .box-3 {
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .about-us-container .box-3 h3 {
+    color: #0B1145;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.22px;
+  }
+  
+  .about-us-container .box-3 h6 {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.25px;
+    text-transform: capitalize;
+    text-align: justify;
+  }
+  
+  .about-us-container .services {
+    background: #fff5ff;
+    text-align: center;
+    box-shadow: 0 6px 8px #fcfcfc;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .about-us-container .services h3 {
+    color: #0B1145;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.22px;
+  }
+  
+  .about-us-container .services h6 {
+    color: #7E254E;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.25px;
+  }
+  
+  .about-us-container .box5 {
+    background: #F5F2F6;
+    text-align: center;
+    font-family: "Inria Sans", sans-serif;
+    padding-top: 10px;
+    box-shadow: 0 6px 8px rgb(194, 189, 189);
+  }
+  
+  .about-us-container .box5 h2 {
+    color: #0B1145;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.55px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .about-us-container .box5 button {
+    background-color: #0B1145;
+    color: #fff;
+    border-radius: 20px;
+    width: 240px;
+    box-shadow: 0px 4px 6px #0f0f16;
+  }
+  
+  .about-us-container .custom-footer {
+    background-color: #7E254E;
+    padding: 20px 0;
+  }
+  
+  .about-us-container .navbar-footer {
+    background-color: #7E254E;
+    box-shadow: 0px -1px 6px #4b162f, 0px 4px 6px #4b162f;
+    padding: 0;
+  }
+  
+  .about-us-container .navbar-footer .nav {
+    flex-direction: row;  /* Align the footer links horizontally */
+    justify-content: center; /* Center the links in the footer */
+  }
+  
+  .about-us-container .navbar-footer .nav-link {
+    color: #fff;
+    margin: 0 10px;  /* Add spacing between the links */
+  }
+  
+  .about-us-container .navbar-footer .nav-link:hover {
+    color: #b95545;
+  }
+  
+  .about-us-container .social-icons {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .about-us-container .social-icons .list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-us-container .social-icons .list-unstyled li {
+    margin: 0 10px;
+  }
+  
+  .about-us-container .social-icons .list-unstyled button {
+    color: #fff;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .about-us-container .social-icons .list-unstyled button:hover {
+    color: #b95545;
+  }
+  

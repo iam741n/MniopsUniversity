@@ -47,7 +47,7 @@ const StudentExperience = () => {
           <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
           <Nav.Link href="#">Become A Student</Nav.Link>
           <Nav.Link href="#">Tuition-Free</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
+          <Nav.Link href="/AboutUs">About</Nav.Link>
           <Nav.Link href="/ContactUs">Contact</Nav.Link>
           <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
         </Nav>
@@ -75,7 +75,7 @@ const StudentExperience = () => {
             <Card.Body>
               <div className="icon-container">
                 <img
-                  src="./icons/quality-icon.png"
+                  src="/i1.png"
                   alt="Quality Icon"
                   className="card-icon"
                 />
@@ -98,7 +98,7 @@ const StudentExperience = () => {
             <Card.Body>
               <div className="icon-container">
                 <img
-                  src="./icons/difference-icon.png"
+                  src="/i2.png"
                   alt="Difference Icon"
                   className="card-icon"
                 />
@@ -123,7 +123,7 @@ const StudentExperience = () => {
             <Card.Body>
               <div className="icon-container">
                 <img
-                  src="./icons/life-icon.png"
+                  src="/i3.png"
                   alt="Student Life Icon"
                   className="card-icon"
                 />
