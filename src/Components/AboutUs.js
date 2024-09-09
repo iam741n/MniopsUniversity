@@ -46,7 +46,7 @@ const AboutUs = () => {
             </NavDropdown>
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
-            <Nav.Link href="#">Tuition-Free</Nav.Link>
+            <Nav.Link href="/TutionFree">Tuition-Free</Nav.Link>
             <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
             <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
@@ -92,7 +92,7 @@ const AboutUs = () => {
           <a href="#academic-programs">Academic Programs</a>
           <a href="#student-experience">Student Experience</a>
           <a href="#become-a-student">Become A Student</a>
-          <a href="#tuition-free">Tuition-Free</a>
+          <a href="/TutionFree">Tuition-Free</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>

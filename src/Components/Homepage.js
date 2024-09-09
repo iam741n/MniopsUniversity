@@ -36,7 +36,7 @@ const Homepage = () => {
             </NavDropdown>
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
-            <Nav.Link href="#">Tuition-Free</Nav.Link>
+            <Nav.Link href="/TutionFree">Tuition-Free</Nav.Link>
             <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
             <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
@@ -170,7 +170,7 @@ const Homepage = () => {
                 <Nav.Link href="#" className="text-white">Academic Programs</Nav.Link>
                 <Nav.Link href="#" className="text-white">Student Experience</Nav.Link>
                 <Nav.Link href="#" className="text-white">Become A Student</Nav.Link>
-                <Nav.Link href="#" className="text-white">Tuition-Free</Nav.Link>
+                <Nav.Link href="/TutionFree" className="text-white">Tuition-Free</Nav.Link>
                 <Nav.Link href="#" className="text-white">About</Nav.Link>
                 <Nav.Link href="#" className="text-white">Contact</Nav.Link>
               </Nav>

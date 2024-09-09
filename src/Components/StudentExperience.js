@@ -35,7 +35,7 @@ const StudentExperience = () => {
             </NavDropdown>
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
             <Nav.Link href="#">Become A Student</Nav.Link>
-            <Nav.Link href="#">Tuition-Free</Nav.Link>
+            <Nav.Link href="/TutionFree">Tuition-Free</Nav.Link>
             <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
             <Link to="/ApplyNow" className="btn apply-now-btn ml-3">Apply Now</Link>
@@ -138,17 +138,17 @@ const StudentExperience = () => {
         <div className="text-section">
           <h2>WHAT'S IT LIKE TO STUDY AT MNIOPS?</h2>
           <p>
-            Studying At University Of The People Can Fit Into Almost Anyone's Life. That's Because Our Classes Take Place 100% Online, With No Live Lectures That You Have To Tune In For.You Can Complete Each Week's Assignments On Your Schedule, Whether That's During Your Commute, On Your Lunch Break, Or After You Put The Kids To Bed.
+            Studying At <strong>MNIOPS</strong> Can Fit Into Almost Anyone's Life. That's Because Our Classes Take Place 100% Online, With No Live Lectures That You Have To Tune In For.You Can Complete Each Week's Assignments On Your Schedule, Whether That's During Your Commute, On Your Lunch Break, Or After You Put The Kids To Bed.
           </p>
         </div>
         <div className="video-container">
           <iframe
-            title="Mniops Student Video"
-            src="https://www.youtube.com/embed/example" // Replace with the actual video link
-            className="video-embed"
-            allowFullScreen
-          ></iframe>
-        </div>
+           title="Mniops Student Video"
+            src="https://www.youtube.com/embed/eVli-tstM5E"
+           className="video-embed"
+          allowFullScreen
+           ></iframe>
+         </div>
       </div>
 
       {/* Section 3: Call to Action */}
@@ -181,7 +181,7 @@ const StudentExperience = () => {
           <a href="#academic-programs">Academic Programs</a>
           <a href="#student-experience">Student Experience</a>
           <a href="#become-a-student">Become A Student</a>
-          <a href="#tuition-free">Tuition-Free</a>
+          <a href="/TutionFree">Tuition-Free</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>

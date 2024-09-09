@@ -9,6 +9,7 @@ import Bachelors from './Components/Bachelor';
 import StudentExperience from './Components/StudentExperience';
 import ContactUs from './Components/ContactUs';
 import AboutUs from './Components/AboutUs';
+import TutionFree from './Components/TutionFree';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Route path="/StudentExperience" element={<StudentExperience />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/TutionFree" element={<TutionFree />} />
+
       </Routes>
       </Router>
   );
