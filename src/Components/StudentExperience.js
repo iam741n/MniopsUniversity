@@ -142,13 +142,14 @@ const StudentExperience = () => {
           </p>
         </div>
         <div className="video-container">
-          <iframe
-           title="Mniops Student Video"
-            src="https://www.youtube.com/embed/eVli-tstM5E"
-           className="video-embed"
-          allowFullScreen
-           ></iframe>
-         </div>
+            <iframe
+             title="Mniops Student Video"
+            src="https://www.youtube.com/embed/fQ0TAHimEAk"
+            className="video-embed"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowFullScreen
+            ></iframe>
+          </div>
       </div>
 
       {/* Section 3: Call to Action */}

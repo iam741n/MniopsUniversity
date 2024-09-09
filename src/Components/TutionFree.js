@@ -140,11 +140,13 @@ const TutionFree = () => {
         <div className="video-container">
   <iframe
     title="Mniops Student Video"
-    src="https://www.youtube.com/embed/eVli-tstM5E"
+    src="https://www.youtube.com/embed/fQ0TAHimEAk"
     className="video-embed"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
 </div>
+
 
       </div>
 
