@@ -42,10 +42,10 @@ const AboutUs = () => {
           <Nav className="ml-auto">
             <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
                 <NavDropdown.Item href="/Bachelor">Bachelor's Programs</NavDropdown.Item>
-                <NavDropdown.Item href="#">Master's Programs</NavDropdown.Item>
+                <NavDropdown.Item href="/Master">Master's Programs</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
-            <Nav.Link href="#">Become A Student</Nav.Link>
+            <Nav.Link href="/BecomeStudent">Become A Student</Nav.Link>
             <Nav.Link href="/TutionFree">Tuition-Free</Nav.Link>
             <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
@@ -91,7 +91,7 @@ const AboutUs = () => {
         <div className="quick-links">
           <a href="#academic-programs">Academic Programs</a>
           <a href="#student-experience">Student Experience</a>
-          <a href="#become-a-student">Become A Student</a>
+          <a href="/BecomeStudent">Become A Student</a>
           <a href="/TutionFree">Tuition-Free</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>

@@ -59,7 +59,7 @@ const RequestSubmitpage = () => {
               <Nav className="mx-auto">
                 <Nav.Link href="#" className="text-white">Academic Programs</Nav.Link>
                 <Nav.Link href="#" className="text-white">Student Experience</Nav.Link>
-                <Nav.Link href="#" className="text-white">Become A Student</Nav.Link>
+                <Nav.Link href="/BecomeStudent" className="text-white">Become A Student</Nav.Link>
                 <Nav.Link href="/TutionFree" className="text-white">Tuition-Free</Nav.Link>
                 <Nav.Link href="#" className="text-white">About</Nav.Link>
                 <Nav.Link href="#" className="text-white">Contact</Nav.Link>

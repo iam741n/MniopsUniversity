@@ -32,10 +32,10 @@ const Homepage = () => {
           <Nav className="ml-auto">
             <NavDropdown title="Academic Programs" id="academic-programs-dropdown">
                 <NavDropdown.Item href="/Bachelor">Bachelor's Programs</NavDropdown.Item>
-                <NavDropdown.Item href="#">Master's Programs</NavDropdown.Item>
+                <NavDropdown.Item href="/Master">Master's Programs</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/StudentExperience">Student Experience</Nav.Link>
-            <Nav.Link href="#">Become A Student</Nav.Link>
+            <Nav.Link href="/BecomeStudent">Become A Student</Nav.Link>
             <Nav.Link href="/TutionFree">Tuition-Free</Nav.Link>
             <Nav.Link href="/AboutUs">About</Nav.Link>
             <Nav.Link href="/ContactUs">Contact</Nav.Link>
@@ -169,7 +169,7 @@ const Homepage = () => {
               <Nav className="mx-auto">
                 <Nav.Link href="#" className="text-white">Academic Programs</Nav.Link>
                 <Nav.Link href="#" className="text-white">Student Experience</Nav.Link>
-                <Nav.Link href="#" className="text-white">Become A Student</Nav.Link>
+                <Nav.Link href="/BecomeStudent" className="text-white">Become A Student</Nav.Link>
                 <Nav.Link href="/TutionFree" className="text-white">Tuition-Free</Nav.Link>
                 <Nav.Link href="#" className="text-white">About</Nav.Link>
                 <Nav.Link href="#" className="text-white">Contact</Nav.Link>
