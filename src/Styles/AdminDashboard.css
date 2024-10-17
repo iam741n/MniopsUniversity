@@ -1,0 +1,136 @@
+/* Layout for the admin dashboard */
+.admin-dashboard-screen {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-dashboard-screen .sidebar {
+  width: 250px;
+  background-color: #2d2f48;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100vh;
+  transition: width 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+.admin-dashboard-screen .dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.admin-dashboard-screen .sidebar-open {
+  margin-left: 250px;
+}
+
+.admin-dashboard-screen .sidebar-closed {
+  margin-left: 0;
+}
+
+.admin-dashboard-screen .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+}
+
+.admin-dashboard-screen .menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.admin-dashboard-screen .welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color:#dd5b98;
+}
+
+.admin-dashboard-screen .subtext {
+  font-size: 14px;
+  color: gray;
+}
+
+.admin-dashboard-screen .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard-screen .user-info span {
+  margin-right: 10px;
+  color:#dd5b98;
+}
+
+.admin-dashboard-screen .datatable-section {
+  margin-top: 20px;
+}
+
+.admin-dashboard-screen .datatable-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard-screen .datatable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard-screen .datatable th, .admin-dashboard-screen .datatable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.admin-dashboard-screen .datatable th {
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.admin-dashboard-screen .datatable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-dashboard-screen .datatable tr:hover {
+  background-color: #ddd;
+}
+
+/* Tablet and mobile responsiveness */
+@media (max-width: 1024px) {
+  .admin-dashboard-screen .sidebar {
+    width: 200px; /* Reduce sidebar width for tablets */
+  }
+
+  .admin-dashboard-screen .sidebar-open {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-screen {
+    flex-direction: column; /* Stack the sidebar on top */
+  }
+
+  .admin-dashboard-screen .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Sidebar becomes non-fixed */
+  }
+
+  .admin-dashboard-screen .sidebar-open {
+    margin-left: 0; /* No margin for mobile view */
+  }
+
+  .admin-dashboard-screen .dashboard-content {
+    margin-left: 0;
+  }
+
+  .admin-dashboard-screen .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

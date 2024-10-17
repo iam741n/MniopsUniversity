@@ -1,0 +1,94 @@
+.sidebar {
+  background-color: #7E254E !important; /* Add !important to override other styles */
+  width: 250px;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  transition: width 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-item {
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background-color: #1a436b; /* Slightly darker shade for hover */
+}
+/* Remove default link styles */
+.menu-item a,
+.submenu-item a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+
+.menu-item a:hover,
+.submenu-item a:hover {
+  color: #fff; /* White color on hover */
+}
+
+.active {
+  background-color: #0a335c !important; /* Blue background for active item */
+  color: white !important; /* Ensure active link text is white */
+}
+
+
+/* Dropdown arrow styling */
+.dropdown-arrow {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Submenu styling */
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.submenu-item:hover {
+  background-color: #1a436b; /* Hover color for submenu items */
+}
+
+/* Tablet and mobile responsiveness */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px; /* Reduce width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Make sidebar relative for mobile */
+  }
+
+  .menu-item {
+    font-size: 14px; /* Reduce menu item font size for mobile */
+  }
+
+  .sidebar-title {
+    font-size: 20px; /* Reduce sidebar title size */
+  }
+}

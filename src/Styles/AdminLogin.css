@@ -1,0 +1,145 @@
+/* Style for the entire admin login container */
+.admin-login-page-container {
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4d1931; /* Updated background color */
+    animation: fadeIn 1.5s ease-in; /* Fade-in animation on page load */
+  }
+  
+  /* Flexbox for equal height columns */
+  .admin-login-page-container .image-col,
+  .admin-login-page-container .form-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Make both columns equal height */
+  }
+  
+  /* Image column section */
+  .admin-login-page-container .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for scaling effect */
+  }
+  
+  .admin-login-page-container .image-section img {
+    max-width: 90%; /* Adjusted to fit well */
+    height: auto;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Smooth transitions for image */
+  }
+  
+  .admin-login-page-container .image-section img:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    opacity: 0.9; /* Slight fade effect on hover */
+  }
+  
+  /* Form section */
+  .admin-login-page-container .form-col {
+    background-color: rgb(190, 190, 190);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for form */
+    animation: slideUp 1.5s ease-out; /* Slide up animation for form on page load */
+  }
+  
+  .admin-login-page-container .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .admin-login-page-container h2 {
+    color: #7E254E;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect for heading */
+  }
+  
+  .admin-login-page-container .form-control {
+    border-radius: 4px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition on focus */
+  }
+  
+  .admin-login-page-container .form-control:focus {
+    box-shadow: 0 0 8px rgba(126, 37, 78, 0.5); /* Shadow effect on focus */
+  }
+  
+  /* Forgot password link */
+  .admin-login-page-container .forgot-password {
+    color: #7E254E;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .admin-login-page-container .forgot-password:hover {
+    text-decoration: underline;
+    color: #5d1d3e; /* Darker color on hover */
+  }
+  
+  /* Login button */
+  .admin-login-page-container .login-btn {
+    background-color: #7E254E;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effect */
+  }
+  
+  .admin-login-page-container .login-btn:hover {
+    background-color: #5d1d3e;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  /* Sign-up link */
+  .admin-login-page-container .sign-up-link {
+    color: #7E254E;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .admin-login-page-container .sign-up-link:hover {
+    text-decoration: underline;
+    color: #5d1d3e;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 767px) {
+    .admin-login-page-container .image-col {
+      display: none;
+    }
+  
+    .admin-login-page-container .form-col {
+      padding: 20px;
+    }
+  
+    .admin-login-page-container .login-form {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .admin-login-page-container .image-section img {
+      max-width: 60%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  

@@ -167,7 +167,7 @@ const Homepage = () => {
             </Row>
             <Navbar expand="lg" className="navbar-footer mt-4">
               <Nav className="mx-auto">
-                <Nav.Link href="#" className="text-white">Academic Programs</Nav.Link>
+                <Nav.Link href="/AdminDashboard" className="text-white">Academic Programs</Nav.Link>
                 <Nav.Link href="#" className="text-white">Student Experience</Nav.Link>
                 <Nav.Link href="/BecomeStudent" className="text-white">Become A Student</Nav.Link>
                 <Nav.Link href="/TutionFree" className="text-white">Tuition-Free</Nav.Link>

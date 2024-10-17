@@ -142,7 +142,7 @@ const ContactUs = () => {
                 />
             </div>
             <button type="submit" className="btn mx-3">
-                APPLY NOW
+                Send 
             </button>
         </form>
     </div>

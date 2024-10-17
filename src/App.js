@@ -12,6 +12,10 @@ import AboutUs from './Components/AboutUs';
 import TutionFree from './Components/TutionFree';
 import BecomeStudent from './Components/BecomeStudent';
 import Master from './Components/Master';
+import AdminDashboard from './Components/AdminDashboard';
+import ContactRequest from './Components/ContactRequest';
+import RequestInfoadmin from './Components/RequestInfoadmin';
+import AdminLogin from './Components/AdminLogin';
 
 function App() {
   return (
@@ -29,7 +33,11 @@ function App() {
       <Route path="/TutionFree" element={<TutionFree />} />
       <Route path="/BecomeStudent" element={<BecomeStudent />} />
       <Route path="/Master" element={<Master />} />
-
+      <Route path="/AdminDashboard" element={<AdminDashboard />} />
+      <Route path="/ContactRequest" element={<ContactRequest />} />
+      <Route path="/RequestInfoadmin" element={<RequestInfoadmin />} />
+      <Route path="/AdminLogin" element={<AdminLogin />} />
+      
 
       </Routes>
       </Router>
